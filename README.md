@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# Weather Dashboard 
+A modern weather dashboard built using React, TypeScript, and Vite. This app fetches real-time weather data using the OpenWeatherMap API. It demonstrates skills in API integration, component structure, polling, error handling, and state management using Context API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Structure
+weather-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── types/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── tailwind.config.js
+├── vite.config.ts
+├── package.json
+└── README.md
 
-Currently, two official plugins are available:
+ #Technologies Used
+ 
+ React + TypeScript – Frontend framework
+ Tailwind CSS – Styling
+ Axios – API calls
+ date-fns – Date formatting
+ lucide-react – Icons
+ OpenWeatherMap API – Weather data
+ LocalStorage – Store last searched city
+ Context API – Global state management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation & Setup
+# 1. Clone the repo
+git clone https://github.com/your-username/weather-dashboard.git
+cd weather-dashboard
 
-## Expanding the ESLint configuration
+# 2. Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 3. Run development server
+npm run dev
+✅ Features
+ Search weather by city name
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+ Show temperature, humidity, wind speed, and conditions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ Weather icons from OpenWeatherMap
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ Auto-refresh every 30 seconds
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+ Error handling (invalid city, network issues)
+
+ Last city saved to LocalStorage
+
+ Responsive layout
+
+ (Bonus) Unit toggle: Celsius ↔ Fahrenheit
+
+ (Bonus) 5-day forecast with date-fns formatting
+
+## My Approach
+I structured the app by splitting functionality into small reusable components like SearchBar, WeatherCard, ErrorBanner, and used Context API for state sharing. I used Axios for robust API communication, added polling with setInterval in useEffect, and implemented local storage to preserve the last searched city. Tailwind made styling rapid and responsive.
+
+For bonus points, I also integrated:
+
+Temperature unit switching
+
+A 5-day forecast
+
+date-fns for formatting
+
+lucide-react for minimal icons
+
+ ## Screenshots
+![course](https://github.com/user-attachments/assets/fd2669f2-5358-4fda-8628-c73e86fb9b73)
+
+
+
+# Author
+saurav raj

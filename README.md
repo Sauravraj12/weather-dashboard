@@ -72,7 +72,11 @@ date-fns for formatting
 lucide-react for minimal icons
 
  ## Screenshots
-![course](https://github.com/user-attachments/assets/fd2669f2-5358-4fda-8628-c73e86fb9b73)
+
+![capture1](https://github.com/user-attachments/assets/f128484a-d7a6-4124-9f36-2830e543695f)
+![Capture2](https://github.com/user-attachments/assets/8db32234-9701-4eea-afc9-03c160ed7f77)
+![Capture4](https://github.com/user-attachments/assets/3f360eca-c38f-4a60-92ed-b965fadf2063)
+![Capture5](https://github.com/user-attachments/assets/54183d13-5f04-44e4-8d62-adbea669323a)
 
 
 
